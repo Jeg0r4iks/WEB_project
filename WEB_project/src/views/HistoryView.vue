@@ -1,18 +1,18 @@
 <template>
   <div>
-    <p>About Mireqx</p>
+    <p>History of Fashion</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutView',
+  name: 'HistoryView',
 };
 </script>
 
 <style scoped>
 p {
-  color: #000000;
+  color: black;
   font-size: 30px;
   font-family: Helvetica;
 }

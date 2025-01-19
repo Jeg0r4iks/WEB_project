@@ -1,5 +1,19 @@
 <template>
   <div>
-    <h1>Welcome to Home Page</h1>
+    <p>Latest fashion news</p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'HomeView',
+};
+</script>
+
+<style scoped>
+p {
+  color: black;
+  font-size: 30px;
+  font-family: Helvetica;
+}
+</style>
