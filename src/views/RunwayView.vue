@@ -10,9 +10,9 @@ export default {
 
 <style scoped> 
 h1 {
-    text-align: center;
-    color: black;
-    font-size: 35px;
-    font-family: 'Gill Sans';
+  text-align: center;    
+  color: black;
+  font-size: 35px;
+  font-family: 'Gill Sans';
 }
 </style>
