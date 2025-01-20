@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>About Mireqx</p>
+    <h1>About Mireqx</h1>
   </div>
 </template>
 
@@ -11,9 +11,10 @@ export default {
 </script>
 
 <style scoped>
-p {
-  color: #000000;
-  font-size: 30px;
-  font-family: Helvetica;
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-family: 'Gill Sans';
 }
 </style>

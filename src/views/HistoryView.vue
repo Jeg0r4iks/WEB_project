@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>History of Fashion</p>
+    <h1>History of Fashion</h1>
   </div>
 </template>
 
@@ -11,9 +11,10 @@ export default {
 </script>
 
 <style scoped>
-p {
+h1 {
+  text-align: center;
   color: black;
-  font-size: 30px;
-  font-family: Helvetica;
+  font-size: 35px;
+  font-family: 'Gill Sans';
 }
 </style>

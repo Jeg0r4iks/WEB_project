@@ -1,16 +1,14 @@
 <template>
-  <div class="home">
-    <h1>Latest in Fashion World</h1>
-  </div>
+    <h1>Find your best style</h1>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
+    name: 'RunwayView',
 };
-</script>
+</script> 
 
-<style scoped>
+<style scoped> 
 h1 {
   text-align: center;
   color: black;
