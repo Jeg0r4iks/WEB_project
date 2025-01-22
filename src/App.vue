@@ -1,19 +1,19 @@
 <template>
   <div id="app">
     <h1 @click="goHome">Mireqx</h1>
-    <nav>
-      <router-link to="/history">History</router-link>
-      <router-link to="/runway">Runway</router-link>
-      <router-link to="/style">Style</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view></router-view>
+    <Navbar />
   </div>
 </template>
 
 <script>
+import Navbar from './components/navbar.vue';
+//import Footer from './components/footer.vue';
+
 export default {
   name: 'App',
+  components: {
+    Navbar
+  },
   methods: {
     goHome() {
       this.$router.push("/home"); 
@@ -38,15 +38,6 @@ h1 {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-  padding: 10px;
-  color: black;
-}
-
 a {
   font-size: 20px;
   text-decoration: none;
@@ -60,7 +51,4 @@ a:hover {
   text-decoration: underline;
 }
 
-.router-link-active {
-  text-decoration: underline;
-}
 </style>

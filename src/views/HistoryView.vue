@@ -2,15 +2,25 @@
   <div>
     <h1>History of Fashion</h1>
     <p>Explore different designers</p>
+    <input 
+      v-model="filter"
+      type="text"
+      placeholder="Search"
+    />
 
-    <ul class="brand-list">
-      <li v-for="brand in filteredBrands" 
+    <div class="brand-list">
+      <button v-for="brand in filteredBrands" 
       :key="brand.id"
       class="brand-item"
-      >
-        {{ brand.name }}
-      </li>
-    </ul>
+      @click="selectBrand(brand)"
+    >
+      {{ brand.name }}
+      </button>
+    </div>
+    <div v-if="selectedBrand" class="brand-details">
+      <h2>{{ selectedBrand.name }}</h2>
+      <p>{{ selectedBrand.description }}</p>	
+    </div>
   </div>
 </template>
 
@@ -20,13 +30,14 @@ export default {
   data() {
     return {
       brands: [
-        { id: 0, name: 'All'},
-        { id: 1, name: 'Alexander Mcqueen' },
-        { id: 2, name: 'Balenciaga' },
-        { id: 3, name: 'Comme des Garcons' },
-        { id: 4, name: 'Dsquared' }
+        { id: 0, name: 'All', description: 'All brands'},
+        { id: 1, name: 'Alexander McQueen', description: 'British fashion designer known for his unconventional designs.'},
+        { id: 2, name: 'Balenciaga', description: 'Spanish luxury fashion house founded by Cristóbal Balenciaga.' },
+        { id: 3, name: 'Comme des Garçons', description: 'Japanese fashion label founded by Rei Kawakubo.' },
+        { id: 4, name: 'Dsquared2', description: 'Canadian fashion label founded by twin brothers Dean and Dan Caten.'}, 
       ],
-      filter: ''
+      filter: '',
+      selectedBrand: null
     };
   },
   computed: {
@@ -34,6 +45,11 @@ export default {
       return this.brands.filter((brand) =>
         brand.name.toLowerCase().includes(this.filter.toLowerCase())
       );
+    }
+  }, 
+  methods: {
+    selectBrand(brand) {
+      this.selectedBrand = brand;
     }
   }
 };
@@ -48,12 +64,17 @@ h1 {
 }
 
 p { 
+  background-color: whitesmoke;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   text-align: center;
   color: black;
   margin-top: 45px;
   font-size: 25px;
   font-family: 'Gill Sans';
   font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .brand-list {
@@ -62,7 +83,6 @@ p {
   text-decoration: none;
   display: flex;
   list-style: none;
-  font-family: Arial;
   font-weight: bold;
   color: black; 
   padding: 5px 10px; 
@@ -70,11 +90,26 @@ p {
 
 .brand-item {
   text-decoration: none; 
-  font-family: Arial;
   color: black; 
   padding: 5px 10px; 
   border: 1px solid black; 
   border-radius: 25px;
-  background-color: blanchedalmond; 
+  background-color: whitesmoke;
+}
+
+input {
+  margin: 50px auto;
+  display: block; 
+  padding: 5px;
+  font-family: 'Gill Sans';
+  font-size: 20px;
+  background-color: blanchedalmond;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-family: 'Gill Sans';
 }
 </style>
