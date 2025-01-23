@@ -6,11 +6,20 @@
 
 <script>
 export default {
-    name: 'Footer',
+    name: 'AppFooter',
 };
 </script>
       
-<style></style>
+<style>
+    footer {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 100px;
+        padding: 10px;
+        color: black;
+    }
+</style>
     
     
       
