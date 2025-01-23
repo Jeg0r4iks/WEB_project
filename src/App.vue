@@ -2,17 +2,19 @@
   <div id="app">
     <h1 @click="goHome">Mireqx</h1>
     <Navbar />
+    <AppFooter />
   </div>
 </template>
 
 <script>
 import Navbar from './components/navbar.vue';
-//import Footer from './components/footer.vue';
+import AppFooter from './components/footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    AppFooter
   },
   methods: {
     goHome() {
@@ -25,8 +27,6 @@ export default {
 <style>
 body {
   background-color: blanchedalmond;
-  margin: 0; 
-  font-family: Helvetica;
   margin: 0; 
   font-family: Helvetica;
 }
