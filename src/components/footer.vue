@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>&copy; 2021 Mireqx</p>
+        <p>&copy; 2025 Mireqx</p>
     </footer>
 </template>
 
