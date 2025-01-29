@@ -103,7 +103,7 @@ input {
   padding: 5px;
   font-family: 'Gill Sans';
   font-size: 20px;
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
 }
 
 h2 {

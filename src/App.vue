@@ -51,7 +51,7 @@ export default {
 
 <style>
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(248, 237, 221);
   margin: 0; 
   font-family: Helvetica;
 }
@@ -61,19 +61,6 @@ h1 {
   font-size: 65px;
   font-family: Helvetica;
   text-align: center;
-}
-
-a {
-  font-size: 20px;
-  text-decoration: none;
-  color: black;
-  font-weight: normal;
-  font-family: Helvetica;
-  font-weight: normal;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 </style>
