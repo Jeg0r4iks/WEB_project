@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>History of Fashion</h1>
-    <p>Explore different designers</p>
     <input 
       v-model="filter"
       type="text"
@@ -60,7 +59,7 @@ h1 {
   text-align: center;
   color: black;
   font-size: 35px;
-  font-family: 'Gill Sans';
+  font-family: 'Akira Expanded';
 }
 
 p { 
@@ -95,13 +94,16 @@ p {
   border: 1px solid black; 
   border-radius: 25px;
   background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Gill Sans';
 }
 
 input {
   margin: 50px auto;
   display: block; 
   padding: 5px;
-  font-family: 'Gill Sans';
+  font-family: 'Akira Expanded';
   font-size: 20px;
   background-color: whitesmoke;
 }
