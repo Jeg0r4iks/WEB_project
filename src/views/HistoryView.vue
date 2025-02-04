@@ -36,7 +36,8 @@ export default {
         { id: 4, name: 'Dsquared2', description: 'Canadian fashion label founded by twin brothers Dean and Dan Caten.'}, 
       ],
       filter: '',
-      selectedBrand: null
+      selectedBrand: null,
+      isDarkMode: localStorage.getItem('isDarkMode') === 'true',
     };
   },
   computed: {
@@ -49,12 +50,31 @@ export default {
   methods: {
     selectBrand(brand) {
       this.selectedBrand = brand;
+    },
+    toggleDarkMode() {
+      this.isDarkMode = !this.isDarkMode;
+      localStorage.setItem('isDarkMode', this.isDarkMode);
+      document.body.classList.toggle('dark-mode', this.isDarkMode);
     }
-  }
+  }, 
+  mounted() {
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-mode');
+    }
+  },
 };
 </script>
 
 <style scoped>
+.dark {
+  background-color: #222;
+  color: whitesmoke;
+}
+
+.dark h1 {
+  color: whitesmoke;
+}
+
 h1 {
   text-align: center;
   color: black;
