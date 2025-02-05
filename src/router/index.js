@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue';
 import HistoryView from '../views/HistoryView.vue'; 
 import RunwayView from '../views/RunwayView.vue';
 import StyleView from '../views/StyleView.vue';
+import LoginView from '../views/LoginView.vue';
 
 const routes = [
   {
@@ -34,6 +35,11 @@ const routes = [
     path: '/style', 
     name: 'style', 
     component: StyleView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
   },
 ];
 

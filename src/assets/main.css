@@ -6,6 +6,15 @@ body {
 }
 
 @font-face {
+  font-family: 'Perfectly Vintages';
+  src: url('@/fonts/Perfectly Vintages.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Akira Expanded';
   src: url('@/fonts/Akira Expanded Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }

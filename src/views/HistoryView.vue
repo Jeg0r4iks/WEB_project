@@ -78,8 +78,9 @@ export default {
 h1 {
   text-align: center;
   color: black;
-  font-size: 35px;
-  font-family: 'Akira Expanded';
+  font-size: 45px;
+  font-family: 'Perfectly Vintages';
+  font-weight: normal;
 }
 
 p { 
@@ -123,7 +124,7 @@ input {
   margin: 50px auto;
   display: block; 
   padding: 5px;
-  font-family: 'Akira Expanded';
+  font-family: 'Perfectly Vintages';
   font-size: 20px;
   background-color: whitesmoke;
 }

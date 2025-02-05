@@ -11,7 +11,7 @@
     </div>
     <div class="right">
       <i :class="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'" @click="toggleDarkMode"></i>
-      <i class="fas fa-user"></i>
+      <router-link to="/login"><i class="fas fa-user"></i></router-link>
     </div>
   </nav>
   <router-view></router-view>
@@ -47,9 +47,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  height: 50px;
   background-color: whitesmoke;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  box-shadow: rgb(244, 153, 153) 1px 1px 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

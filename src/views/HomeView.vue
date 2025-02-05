@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h1>Latest in Fashion World</h1>
   </div>
 </template>
 
@@ -14,6 +13,6 @@ export default {
 h1 {
   text-align: center;
   color: black;
-  font-size: 35px;
+  font-size: 45px;
 }
 </style>
