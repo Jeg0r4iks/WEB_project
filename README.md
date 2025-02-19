@@ -16,7 +16,8 @@ Jau izpildītie uzdevumi:
 - Tumšā tēma un hover efekti nosaukumam, kā arī Navbaram;
 - Footer, kuru ir jāpapildina ar informāciju par vietni;
 - Sāku veidot sadaļu kurā var rakstīt saturu, taču bez backend pievienošanas, nevarēju to izdarīt. Tapēc pedejas stundās strādāju ar laravel pievienošanu.
-- izveidoju formu priekš login funkcijam
+- Izveidoju formu priekš login funkcijam
+- Pievienoju fontus priekš navbar 
   
 
 
