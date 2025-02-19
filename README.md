@@ -1,41 +1,24 @@
 # WEB_project
 
-This template should help get you started developing with Vue 3 in Vite.
+Uzdevuma apraksts 
 
-## Recommended IDE Setup
+Galvenais projekta uzdevums ir izveidot tīmekļa vietni par modi un stilu. Līdzīgas sistēmas jeb konkurenti nepiedāvā lietotājiem iespēju pašiem veidot ar modi saistošo saturu, kā arī savstarpēji komunicēt un personalizēt informāciju pēc dažādām tēmām. Projekta mērķi ir nodrošināt iespēju saņemt atgriezenisko saiti no citiem lietotājiem, iedvesmoties, izpausties radoši, kā arī dalīties un attīstīt savas jaunas idejas. Sistēmas datubāzē glabāsies lietotāju dati, kā arī saturs kurš būs publicēts vietnē. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Modes tīmekļa vietnei ir jānodrošinā sekojošas funkcionalitātes: 
 
-## Customize configuration
+- Reģistrēšana un ielogošanas funkcijas, kā arī iespēja pievienot aprakstu par sevi profilā; 
+- Filtrēšana pēc dažādiem tematiem un meklēšana pēc atslēgvārdiem;  
+- Reākciju pievienošana, kā arī komentāriju rakstīšana;  
+- Filtrēšana pēc satura popularitātes (reākciju skaita);
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Jau izpildītie uzdevumi:
+- Navbar ar dažādam lapam (Home, History, Runway un About), sadaļā History ir pieejama sadaļa ar dizainieru aprakstiem un arī meklēšana pēc atslēgvārda; 
+- Tumšā tēma un hover efekti nosaukumam, kā arī Navbaram;
+- Footer, kuru ir jāpapildina ar informāciju par vietni;
+- Sāku veidot sadaļu kurā var rakstīt saturu, taču bez backend pievienošanas, nevarēju to izdarīt. Tapēc pedejas stundās strādāju ar laravel pievienošanu.
+- izveidoju formu priekš login funkcijam
+  
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+ 
